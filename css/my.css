@@ -1,5 +1,6 @@
 
-    /*css reset*/
+/* Minimal CSS Reset */
+
 html {
     box-sizing: border-box;
     font-size: 12px;
@@ -37,23 +38,64 @@ img {
 }
 
 
- layout {
-     display: flex;
-     flex-direction: column;
-     min-height: 100vh;
-     justify-content: center;
-     padding: 0 30px;
-     text-align: center;
- }
+/* Typography */
 
-layout > .Name {
-    font-family: "Script MT Bold", sans-serif;
-    font-size: 3.75rem;
-    font-weight: 600;
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 20px;
+    }
 }
 
 .icon-social i {
-    font-size: 3rem;
+    font-size: 3em;
+}
+
+/* Custom Styles */
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: center;
+}
+
+main > .Name {
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 3.75em;
+    font-weight: 600;
+}
+
+main > .bio {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-weight: 100;
+}
+
+.icon-social i {
     padding: 10px;
 }
 
@@ -61,16 +103,24 @@ layout > .Name {
     text-decoration: none;
 }
 
-layout > .bio, .friend {
-    font-size: 1.5rem;
-    margin: 1.5rem 0;
-    font-weight: 600;
+.devto {
+    margin-bottom: -0.2rem;
 }
 
- layout {
-     background: transparent;
-     color: #fafafa;
- }
+.devto svg {
+    margin-bottom: -0.2rem;
+    margin-left: 0.675rem;
+    width: 2.65rem;
+    height: 2.65rem;
+}
+
+
+/* Theme */
+
+main {
+    background: transparent;
+    color: #fafafa;
+}
 
 .icon-social a {
     color: #fafafa;
@@ -79,12 +129,13 @@ layout > .bio, .friend {
 .icon-social a svg path {
     fill: #fafafa;
 }
-    #particles-js {
-        background: #0B0C14;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1; /* 将其放置在最底层，作为背景 */
-    }
+
+#particles-js {
+    background: #0B0C14;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 将其放置在最底层，作为背景 */
+}
